@@ -1,0 +1,16 @@
+{
+  "extends": "@zanix/std-config/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "adapters/*": ["src/app/adapters/*"],
+      "services/*": ["src/app/services/*"],
+      "providers/*": ["src/commons/(providers)/*"],
+      "clients/*": ["src/commons/(clients)/*"],
+      "middlewares": ["src/commons/middlewares/index"],
+      "utilities": ["src/commons/utils/index"],
+      "models": ["src/commons/models/index"],
+      "config": ["src/config/index"]
+    }
+  }
+}

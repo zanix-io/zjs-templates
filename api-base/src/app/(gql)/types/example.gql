@@ -1,0 +1,4 @@
+type Welcome {
+  message: String
+  data: Null
+}

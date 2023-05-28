@@ -1,0 +1,23 @@
+{
+  "name": "zanixjs-api-template",
+  "version": "1.0.0",
+  "description": "ZanixJS Framework API Template",
+  "author": "ZanixJS",
+  "license": "MIT",
+  "scripts": {
+    "build:prod": "zjs build",
+    "prestart:prod": "npm run build:prod",
+    "start:prod": "zjs start",
+    "start:dev": "zjs dev",
+    "start": "zjs dev --no-watch",
+    "deploy": "zjs deploy",
+    "format": "zjs format",
+    "lint": "zjs lint",
+    "test": "zjs test",
+    "prepare": "zjs prepare"
+  },
+  "dependencies": {
+    "@zanix/server": "^1.x"
+  },
+  "keywords": []
+}

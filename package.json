@@ -1,0 +1,24 @@
+{
+  "name": "@zanix/templates",
+  "version": "1.0.0",
+  "description": "ZanixJS Framework Templates",
+  "author": "Ismael Calle - icalle@utp.edu.co",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zanix-io/zjs-config.git"
+  },
+  "keywords": [],
+  "files": [
+    "api-base",
+    "api-base/.gitignore",
+    "api-base/.env"
+  ],
+  "bugs": {
+    "url": "https://github.com/zanix-io/zjs-server/issues"
+  },
+  "homepage": "https://github.com/zanix-io/zjs-server#readme"
+}
