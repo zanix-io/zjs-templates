@@ -29,6 +29,7 @@ The templates in this repository follow the Adapter pattern, which promotes sepa
 The project structure for the generated template follows a modular approach to maintain separation of concerns and facilitate maintainability. Here's an overview of the folder structure:
 root folder
 
+```
 ├─ CHANGELOG.md
 ├─ jest.config.js
 ├─ package-lock.json
@@ -71,6 +72,7 @@ root folder
 │ ├─ secrets
 │ │ └─ \*.srt
 │ └─ index.ts (for variable and secret configuration/definition like @zanix/server)
+````
 
 This structure is designed to promote modularity, scalability, and maintainability in your ZANIX Framework projects. Feel free to explore each directory to understand the purpose of different files and folders.
 
