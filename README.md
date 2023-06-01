@@ -14,10 +14,21 @@ Currently, the repository includes the following template:
 
 The templates in this repository follow the Adapter pattern, which promotes separation of concerns and flexibility in integrating with external services and APIs. The overall architecture of a ZANIX application is depicted below:
 
-|                        |              |              |                   |
-| :--------------------: | :----------: | :----------: | :---------------: |
-| Controllers/ Resolvers |   Services   |   Adapters   | Clients/Providers |
-|          API           | (Dependency) | (Dependency) |   (Dependency)    |
+```
+┌───────────────────────┐   ┌───────────────────────┐   ┌───────────────────────┐   ┌───────────────────────┐
+│                       │   │                       │   │                       │   │                       │
+│ Controllers/Resolvers │───────►    Services      ◄─────►       Adapters      ◄──────►  Clients/Providers  │
+│                       │   │                       │   │                       │   │                       │
+└───────────────────────┘   └───────────────────────┘   └───────────────────────┘   └───────────────────────┘
+             ▲                               
+             │                                
+             │                             
+┌───────────────────────┐   ┌───────────────────────────────────────────────────────────────────────────────┐
+│                       │   │                                                                               |
+│           API         │───────►                            Dependencies                                   │
+│                       │   │                                                                               |
+└───────────────────────┘   └───────────────────────────────────────────────────────────────────────────────┘  
+```
 
 - **Controllers/Resolvers**: Responsible for handling incoming requests and invoking the corresponding service methods or resolving data.
 - **Services**: Implement the business logic of the application and interact with adapters for data retrieval, manipulation, or external service communication.
