@@ -1,6 +1,6 @@
 # ZANIX Framework Templates
 
-[![npm version](https://badge.fury.io/js/%40zanix%2Feslint-config.svg)](https://badge.fury.io/js/%40zanix%2Fserver) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://badge.fury.io/js/%40zanix%2Ftemplates.svg)](https://badge.fury.io/js/%40zanix%2Ftemplates) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 This repository contains templates for the ZANIX Framework, designed to accelerate the development of projects using the ZANIX ecosystem. The templates provide a starting point for various types of applications and follow the ZANIX architecture patterns.
 
