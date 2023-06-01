@@ -21,13 +21,13 @@ The templates in this repository follow the Adapter pattern, which promotes sepa
 │                       │   │                       │   │                       │   │                       │
 └───────────────────────┘   └───────────────────────┘   └───────────────────────┘   └───────────────────────┘
              ▲                         |                           |                             |
-             │                         └─────────────────────────────────────────────────────────┘ 
-             │                                                     ▼ 
+             │                         └─────────────────────────────────────────────────────────┘
+             │                                                     ▼
 ┌───────────────────────┐   ┌───────────────────────────────────────────────────────────────────────────────┐
 │                       │   │                                                                               |
 │           API         │───────►                             Dependencies                                  │
 │                       │   │                                                                               |
-└───────────────────────┘   └───────────────────────────────────────────────────────────────────────────────┘  
+└───────────────────────┘   └───────────────────────────────────────────────────────────────────────────────┘
 ```
 
 - **Controllers/Resolvers**: Responsible for handling incoming requests and invoking the corresponding service methods or resolving data.
@@ -83,11 +83,11 @@ root folder
 │ ├─ secrets
 │ │ └─ \*.srt
 │ └─ index.ts (for variable and secret configuration/definition like @zanix/server)
-````
+```
 
 This structure is designed to promote modularity, scalability, and maintainability in your ZANIX Framework projects. Feel free to explore each directory to understand the purpose of different files and folders.
 
-For more information on how to use the templates and get started with ZANIX Framework, please refer to the documentation or the individual template's README file.
+For more information on how to use the templates and get started with ZANIX Framework, please refer to the documentation or the individual template's README file, like [Zanix Configuration](https://github.com/zanix-io/zjs-config#readme).
 
 ## Contributing
 
