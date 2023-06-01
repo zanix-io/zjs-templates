@@ -8,7 +8,7 @@ This repository contains templates for the ZANIX Framework, designed to accelera
 
 Currently, the repository includes the following template:
 
-- **api-base**: A template for creating API-based applications using the `@zanix/server` library. It can be installed using the command `zjs new api [path]`, where `[path]` is the destination path for the new project.
+- **api-base**: A template for creating API-based applications using the `@zanix/server` library. It can be installed using the command `zjs new api [path]` of [@zanix/Cli](https://www.npmjs.com/package/@zanix/cli#readme), where `[path]` is the destination path for the new project.
 
 ## Architecture Overview
 
@@ -87,7 +87,7 @@ root folder
 
 This structure is designed to promote modularity, scalability, and maintainability in your ZANIX Framework projects. Feel free to explore each directory to understand the purpose of different files and folders.
 
-For more information on how to use the templates and get started with ZANIX Framework, please refer to the documentation or the individual template's README file, like [Zanix Configuration](https://github.com/zanix-io/zjs-config#readme) and [Zanix Server](https://github.com/zanix-io/zjs-server#readme).
+For more information on how to use the templates and get started with ZANIX Framework, please refer to the documentation or the individual template's README file, like [Zanix Configuration](https://github.com/zanix-io/zjs-config#readme) and [Zanix Server](https://www.npmjs.com/package/@zanix/server#readme).
 
 ## Contributing
 
