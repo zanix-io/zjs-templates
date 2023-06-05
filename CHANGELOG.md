@@ -7,9 +7,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.1] - 2023-06-05
+
 ### Added
 
+- API-base: Resources folder
 - Readme File
+
+### Changed
+
+- API-base: Global and local middlewares
+- API-base: Configure the zanix file to run the server instead of `zanix.app.ts`. Compatible with cli `1.0.1`
+- API-base: More examples of controller routes.
 
 ## [1.0.0] - 2023-05-27
 

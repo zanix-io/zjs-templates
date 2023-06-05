@@ -9,8 +9,7 @@
       "clients/*": ["src/commons/(clients)/*"],
       "middlewares": ["src/commons/middlewares/index"],
       "utilities": ["src/commons/utils/index"],
-      "models": ["src/commons/models/index"],
-      "config": ["src/config/index"]
+      "models": ["src/commons/models/index"]
     }
   }
 }

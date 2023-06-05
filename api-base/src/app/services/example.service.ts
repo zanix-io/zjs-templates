@@ -6,7 +6,7 @@ import { ExampleAdapter } from 'adapters/example.adapter'
  * @name ExampleService
  * @description Service class.
  * @extends { ZanixService<BaseAdapter> }
- * @decorator @type {typeof Service} @argument adapter {BaseAdapter}
+ * @decorator @type {typeof Service} @argument adapter {BaseAdapter?}
  * @summary This is the Business Layer.
  * -------- Do not import providers or clients here.
  */

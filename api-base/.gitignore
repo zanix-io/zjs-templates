@@ -114,3 +114,4 @@ package-lock.json
 
 #Zanix framework
 .znx
+resources/**/*.json.js

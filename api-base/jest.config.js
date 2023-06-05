@@ -6,7 +6,6 @@ module.exports = {
     'clients/(.*)': '<rootDir>/src/commons/(clients)/$1',
     middlewares: '<rootDir>/src/commons/middlewares/index',
     utilities: '<rootDir>/src/commons/utils/index',
-    models: '<rootDir>/src/commons/models/index',
-    config: '<rootDir>/src/config/index'
+    models: '<rootDir>/src/commons/models/index'
   }
 }

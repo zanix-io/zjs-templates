@@ -1,3 +1,5 @@
 // Middlewares
+import exampleGlobalPipe from './exampleGlobal'
+import exampleInterceptor from './exampleLocal'
 
-export { testPipe } from './test.pipe'
+export { exampleGlobalPipe, exampleInterceptor }

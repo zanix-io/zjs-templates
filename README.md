@@ -32,7 +32,7 @@ The templates in this repository follow the Adapter pattern, which promotes sepa
 
 - **Controllers/Resolvers**: Responsible for handling incoming requests and invoking the corresponding service methods or resolving data.
 - **Services**: Implement the business logic of the application and interact with adapters for data retrieval, manipulation, or external service communication.
-- **Adapters**: Provide the necessary abstractions and interfaces to interact with external services or data sources.
+- **Adapters**: Provide the necessary abstractions and interfaces to interact with external services or data sources. They can also function as "wildcard" classes.
 - **Clients/Providers**: Act as clients to external services or providers of data. Clients are responsible for making requests and handling responses, while providers offer data access or integration capabilities.
 
 ## Project Structure
@@ -49,43 +49,44 @@ root folder
 ├─ README.md
 ├─ .eslintrc
 ├─ .prettierrc
-├─ zanix.app.ts
+└─ resources (assets, data, statics, scripts, non-modular files)
 └─ src
-├─ tests
-├─ app
-│ ├─ (gql)
-│ │ ├─ types
-│ │ │ ├─ _.graphql
-│ │ │ └─ _.gql
-│ │ └─ inputs
-│ │ ├─ _.graphql
-│ │ └─ _.gql
-│ ├─ (rest)
-│ │ ├─ rtos
-│ │ │ └─ _.rto.ts (request transfer object)
-│ │ └─ _.controller.ts (extends one service)
-│ ├─ adapters
-│ │ └─ _.adapter.ts (extends one client, provider, or inject adapters)
-│ ├─ services
-│ │ └─ _.service.ts (extends one adapter or inject services)
-│ ├─ types.d.ts
-│ ├─ commons
-│ │ ├─ clients
-│ │ │ └─ _.client.ts
-│ │ ├─ providers
-│ │ │ └─ _.provider.ts
-│ │ ├─ middlewares
-│ │ │ ├─ _.pipes.ts
-│ │ │ └─ _.interceptor.ts
-│ │ ├─ models or data
-│ │ └─ utils
-├─ config
-│ ├─ secrets
-│ │ └─ \*.srt
-│ └─ index.ts (for variable and secret configuration/definition like @zanix/server)
+│ ├─ tests
+│ ├─ app
+│ │ ├─ (gql)
+│ │ │ ├─ types
+│ │ │ │ ├─ _.graphql
+│ │ │ │ └─ _.gql
+│ │ │ └─ inputs
+│ │ │ │ ├─ _.graphql
+│ │ │ │ └─ _.gql
+│ │ ├─ (rest)
+│ │ │ ├─ rtos
+│ │ │ │ └─ _.rto.ts (request transfer object)
+│ │ │ └─ _.controller.ts (inject one service)
+│ │ ├─ adapters
+│ │ │ └─ _.adapter.ts (inject one client, provider, or adapters)
+│ │ ├─ services
+│ │ │ └─ _.service.ts (inject adapters or services)
+│ │ ├─ types.d.ts
+│ │ ├─ commons
+│ │ │ ├─ clients
+│ │ │ │ └─ _.client.ts
+│ │ │ ├─ providers
+│ │ │ │ └─ _.provider.ts
+│ │ │ ├─ middlewares
+│ │ │ │ ├─ _.pipes.ts
+│ │ │ │ └─ _.interceptor.ts
+│ │ │ ├─ models
+│ │ │ └─ utils
+│ │ │ └─ ...
+│ ├─ config
+│ │ ├─ secrets
+│ │ │ └─ \*.srt
+│ │ └─ zanix.ts (for variable, secret and configuration definition)
 ```
 
-This structure is designed to promote modularity, scalability, and maintainability in your ZANIX Framework projects. Feel free to explore each directory to understand the purpose of different files and folders.
+This structure is designed to promote modularity, scalability, and maintainability in your ZANIX Framework projects. Feel free to explore each directory to understand the purpose of different files and folders. the `resources` and `src/config` folders must not change their name or location for the CLI commands to work correctly.
 
 For more information on how to use the templates and get started with ZANIX Framework, please refer to the documentation or the individual template's README file, like [Zanix Configuration](https://github.com/zanix-io/zjs-config#readme) and [Zanix Server](https://www.npmjs.com/package/@zanix/server#readme).
 
