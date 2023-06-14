@@ -1,9 +1,9 @@
 {
   "name": "@zanix/templates",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ZanixJS Framework Templates",
   "author": "Ismael Calle - icalle@utp.edu.co",
-  "license": "ISC",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },

@@ -3,10 +3,11 @@ import { ZanixMongoProvider } from '@zanix/server'
 /**
  * @Provider
  * @name MongoProvider
- * @description Provider class
+ * @description Mongo Provider Class
  * @extends { ZanixMongoProvider }
- * @summary Providers are for external APPs connections.
+ * @summary Provider for database connections.
  * -------- This is for Adapters use only.
+ * -------- You can also implement seeders in this section.
  */
 
 export class MongoProvider extends ZanixMongoProvider {

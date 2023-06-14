@@ -1,4 +1,4 @@
-import { Expose, IsNumberString, ZanixRTO } from '@zanix/server'
+import { Expose, IsString, ZanixRTO } from '@zanix/server'
 
 /**
  * @RTO
@@ -10,7 +10,7 @@ import { Expose, IsNumberString, ZanixRTO } from '@zanix/server'
  */
 
 export class ExampleRTO extends ZanixRTO {
-  @IsNumberString()
+  @IsString()
   @Expose()
   public data!: string
 }

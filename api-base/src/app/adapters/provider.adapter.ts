@@ -6,7 +6,7 @@ import { ExampleModel } from 'models'
  * @Adapter
  * @name ExampleAdapter
  * @description Data Access Adapter Object.
- * @extends { ZanixAdapter<BaseProvider> }, other options
+ * @extends { ZanixDatabaseAdapter<DatabaseProvider> }, other options
  * @decorator @type {typeof Adapter} @argument interactor {BaseProvider} @argument opts
  * @summary This is the Data Access Layer.
  * -------- Adapter for Data Access logic only:

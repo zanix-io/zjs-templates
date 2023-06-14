@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.2] - 2023-06-14
+
+### Added
+
+- Adding cache provider and new server version on `api-base` template
+
+### Changed
+
+- Some redistribution on `api-base` template
+- MIT Licence in PKG
+
 ## [1.0.1] - 2023-06-05
 
 ### Added
