@@ -7,11 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [1.0.2] - 2023-06-14
+## [1.0.2] - 2023-06-15
 
 ### Added
 
-- Adding cache provider and new server version on `api-base` template
+- Adding cache provider and new server version on `api-base` template (`@zanix/server@1.0.5`)
 
 ### Changed
 
