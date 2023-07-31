@@ -6,10 +6,11 @@
  */
 const localInterceptor: LocalMiddleware = function (httpCtx) {
   this.logger.debug('Example local interceptor running')
-  const { message } = httpCtx.res.body as never
-  httpCtx.res.body = {
-    ...(httpCtx.res.body as object),
-    message: `${message} intercepted for ${this.config.NODE_ENV} env`
+  if (httpCtx.res.body) {
+    httpCtx.res.body = {
+      ...httpCtx.res.body,
+      message: `${httpCtx.res.body.message} intercepted for ${this.config.NODE_ENV} env`
+    }
   }
 }
 

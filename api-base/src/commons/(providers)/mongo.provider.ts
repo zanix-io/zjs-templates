@@ -13,7 +13,7 @@ import { ZanixMongoProvider } from '@zanix/server'
 export class MongoProvider extends ZanixMongoProvider {
   constructor(config: Configuration) {
     super({
-      connection: { uri: config.secrets.EXAMPLE_SECRET }
+      connection: { uri: config.getSecret('EXAMPLE_SECRET') }
     })
   }
 }

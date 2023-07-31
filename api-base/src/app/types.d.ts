@@ -1,5 +1,4 @@
-// App types definitions
-
+/** App types definitions */
 interface Welcome {
   data: string
 }

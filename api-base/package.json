@@ -2,7 +2,7 @@
   "name": "zanixjs-api-template",
   "version": "1.0.0",
   "description": "ZanixJS Framework API Template",
-  "author": "ZanixJS",
+  "author": "Zanix",
   "license": "MIT",
   "scripts": {
     "build:prod": "zjs build",
@@ -17,7 +17,7 @@
     "prepare": "zjs prepare"
   },
   "dependencies": {
-    "@zanix/server": "^1.0.5"
+    "@zanix/server": "^1.1.0"
   },
   "keywords": []
 }

@@ -1,0 +1,3 @@
+*.sqlite
+secrets
+!secrets/example.srt
