@@ -3,13 +3,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "adapters/*": ["src/app/adapters/*"],
       "services/*": ["src/app/services/*"],
+      "adapters/*": ["src/app/services/adapters/*"],
       "providers/*": ["src/commons/(providers)/*"],
       "clients/*": ["src/commons/(clients)/*"],
+      "models/*": ["src/commons/models/*"],
       "middlewares": ["src/commons/middlewares/index"],
-      "utilities": ["src/commons/utils/index"],
-      "models": ["src/commons/models/index"]
+      "utilities": ["src/commons/utils/index"]
     }
   }
 }

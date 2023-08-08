@@ -1,29 +1,17 @@
-import { MongoProvider } from 'providers/mongo.provider'
+import { ZanixMongoProvider } from '@zanix/server'
 
-export const ExampleModel = MongoProvider.generateModel<ExampleModelAttrs>(
+const ExampleModel = ZanixMongoProvider.defineModel<ExampleModelAttrs>(
   'znxTests',
   {
     data: { type: String, require: true }
   },
   {
-    timestamps: true,
-    toObject: {
-      virtuals: true,
-      transform: (_, ret) => {
-        delete ret._id
-        delete ret.__v
-      }
-    },
-    toJSON: {
-      virtuals: true,
-      transform: (_, ret) => {
-        delete ret._id
-        delete ret.__v
-      }
-    }
+    timestamps: true
   }
 )
 
 declare global {
   type ExampleModel = typeof ExampleModel
 }
+
+export default ExampleModel

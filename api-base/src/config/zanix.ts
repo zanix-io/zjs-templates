@@ -1,11 +1,20 @@
 /**
  * @type {AppSetup}
- *  Do not remove "as a const" or assign a type to this module.
+ *  Do not remove "as a const" or assign a type to this module, or change generalConfig position.
  *  It is for a correct typing of configuration variables
  */
 
-export default {
+const generalConfig: AppSetup = {
   PORT: 9000, // Default port: 8080, you can also define it in .env files, envars or variables property
+  global: {
+    cors: {
+      origin: ''
+    }
+  }
+}
+
+export default {
+  ...generalConfig,
   config: {
     variables: [], // Other variables. Can be secrets hosted on envars
     envars: {
@@ -16,10 +25,5 @@ export default {
     },
     // Example secret link, for Zanix Secrets
     secrets: ['EXAMPLE_SECRET']
-  },
-  global: {
-    cors: {
-      origin: ''
-    }
   }
 } as const

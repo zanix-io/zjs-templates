@@ -1,4 +1,5 @@
 import { ZanixMongoProvider } from '@zanix/server'
+import ExampleModel from 'models/example.model'
 
 /**
  * @Provider
@@ -13,7 +14,8 @@ import { ZanixMongoProvider } from '@zanix/server'
 export class MongoProvider extends ZanixMongoProvider {
   constructor(config: Configuration) {
     super({
-      connection: { uri: config.getSecret('EXAMPLE_SECRET') }
+      connection: { uri: config.getSecret('EXAMPLE_SECRET') },
+      models: [ExampleModel]
     })
   }
 }

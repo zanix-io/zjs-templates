@@ -13,7 +13,7 @@ import { ExampleClient } from 'clients/example.client'
  */
 
 @Adapter(ExampleClient)
-export class ClientAdapter extends ZanixAdapter<ExampleClient> {
+export class ClientAdapter extends ZanixAdapter<typeof ExampleClient> {
   /**
    *
    * @param data {string}
