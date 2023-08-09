@@ -20,7 +20,7 @@ export default {
     envars: {
       dev: {
         // Example variable
-        exampleDevUrl: 'http://${NODE_ENV}.com'
+        exampleDevUri: 'http://${NODE_ENV}.com'
       }
     },
     // Example secret link, for Zanix Secrets

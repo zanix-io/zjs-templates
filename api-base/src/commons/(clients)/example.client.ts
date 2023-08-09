@@ -11,7 +11,7 @@ import { ZanixRestClient } from '@zanix/server'
 
 export class ExampleClient extends ZanixRestClient {
   constructor(config: Configuration) {
-    super({ url: config.exampleDevUrl })
+    super({ uri: config.exampleDevUri })
   }
 
   public example() {
