@@ -2,15 +2,25 @@
 
 [![npm version](https://badge.fury.io/js/%40zanix%2Ftemplates.svg)](https://badge.fury.io/js/%40zanix%2Ftemplates) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- Templates:
+  - [ Api Base](#api-base)
+- [Support and Contributions](#support-and-contributions)
+- [License](#license)
+
+## Introduction
+
 This repository contains templates for the ZANIX Framework, designed to accelerate the development of projects using the ZANIX ecosystem. The templates provide a starting point for various types of applications and follow the ZANIX architecture patterns.
 
 ## Templates
 
-Currently, the repository includes the following template:
+### Api Base
 
-- **api-base**: A template for creating API-based applications using the `@zanix/server` library. It can be installed using the command `zjs new api [path]` of [@zanix/Cli](https://www.npmjs.com/package/@zanix/cli#readme), where `[path]` is the destination path for the new project.
+A template for creating API-based applications using the `@zanix/server` library. It can be installed using the command `zjs new api [path]` of [@zanix/Cli](https://www.npmjs.com/package/@zanix/cli#readme), where `[path]` is the destination path for the new project.
 
-## Architecture Overview
+**Architecture Overview:**
 
 The templates in this repository follow the Adapter pattern, which promotes separation of concerns and flexibility in integrating with external services and APIs. The overall architecture of a ZANIX application is depicted below:
 
@@ -35,7 +45,7 @@ The templates in this repository follow the Adapter pattern, which promotes sepa
 - **Adapters**: Provide the necessary abstractions and interfaces to interact with external services or data sources. They can also function as "wildcard" classes.
 - **Clients/Providers**: Act as clients to external services or providers of data. Clients are responsible for making requests and handling responses, while providers offer data access or integration capabilities.
 
-## Project Structure
+**Project Structure:**
 
 The project structure for the generated template follows a modular approach to maintain separation of concerns and facilitate maintainability. Here's an overview of the folder structure:
 root folder
@@ -64,10 +74,10 @@ root folder
 │ │ │ ├─ rtos
 │ │ │ │ └─ _.rto.ts (request transfer object)
 │ │ │ └─ _.controller.ts (inject one service)
-│ │ ├─ adapters
-│ │ │ └─ _.adapter.ts (inject one client, provider, or adapters)
 │ │ ├─ services
 │ │ │ └─ _.service.ts (inject adapters or services)
+│ │ │ ├─ adapters
+│ │ │ │ └─ _.adapter.ts (inject one client, provider, or adapters)
 │ │ ├─ types.d.ts
 │ │ ├─ commons
 │ │ │ ├─ clients
@@ -88,9 +98,9 @@ root folder
 
 This structure is designed to promote modularity, scalability, and maintainability in your ZANIX Framework projects. Feel free to explore each directory to understand the purpose of different files and folders. the `resources` and `src/config` folders must not change their name or location for the CLI commands to work correctly.
 
-For more information on how to use the templates and get started with ZANIX Framework, please refer to the documentation or the individual template's README file, like [Zanix Configuration](https://github.com/zanix-io/zjs-config#readme) and [Zanix Server](https://www.npmjs.com/package/@zanix/server#readme).
+## Support and Contributions
 
-## Contributing
+For more information on how to use the templates and get started with ZANIX Templates, please refer to the documentation, to the [changelog](/CHANGELOG.md#changelog), or to the individual template's README file, like [Zanix Configuration](https://github.com/zanix-io/zjs-config#readme) and [Zanix Server](https://www.npmjs.com/package/@zanix/server#readme).
 
 If you have any suggestions, bug reports, or feature requests, please feel free to open an issue or submit a pull request. We welcome contributions from the community to make the ZANIX Framework Templates even better!
 
