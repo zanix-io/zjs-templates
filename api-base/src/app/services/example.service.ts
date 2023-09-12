@@ -1,5 +1,6 @@
 import { Service, ZanixService } from '@zanix/server'
 import { ExampleAdapter } from 'adapters/example.adapter'
+import { ExampleJob } from 'src/commons/jobs/exampleJob'
 
 /**
  * @Service
@@ -19,6 +20,8 @@ export class ExampleService extends ZanixService<ExampleAdapter> {
    * @returns {string}
    */
   public async welcome({ data }: Welcome) {
+    this.tasker.addJob(ExampleJob, { secureData: 'ok' })
+
     return this.adapter.welcome(data)
   }
 }
