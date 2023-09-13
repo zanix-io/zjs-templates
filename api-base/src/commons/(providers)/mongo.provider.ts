@@ -1,3 +1,5 @@
+'useRunOnStart'
+
 import { ZanixMongoProvider } from '@zanix/server'
 import ExampleModel from 'models/example.model'
 

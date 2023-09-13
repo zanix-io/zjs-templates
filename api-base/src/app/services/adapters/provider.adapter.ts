@@ -5,7 +5,7 @@ import { MongoProvider } from 'providers/mongo.provider'
  * @Adapter
  * @name ExampleAdapter
  * @description Data Access Adapter Object.
- * @extends { ZanixDatabaseAdapter<DatabaseProvider> }, other options
+ * @extends { ZanixDatabaseAdapter<ExampleModel, typeof MongoProvider> }, other options
  * @decorator @type { typeof Adapter } @argument { BaseProvider }interactor @argument { ModelName } opts
  * @summary This is the Data Access Layer.
  * -------- Adapter for Data Access logic only:
@@ -14,8 +14,8 @@ import { MongoProvider } from 'providers/mongo.provider'
 
 @Adapter(MongoProvider, 'znxTests')
 export class ProviderAdapter extends ZanixDatabaseAdapter<
-  typeof MongoProvider,
-  ExampleModel
+  ExampleModel,
+  typeof MongoProvider
 > {
   /**
    *

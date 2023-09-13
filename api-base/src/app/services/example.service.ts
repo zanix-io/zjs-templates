@@ -1,6 +1,6 @@
 import { Service, ZanixService } from '@zanix/server'
 import { ExampleAdapter } from 'adapters/example.adapter'
-import { ExampleJob } from 'src/commons/jobs/exampleJob'
+import { ExampleJob } from 'src/commons/jobs/example.job'
 
 /**
  * @Service
