@@ -1,6 +1,4 @@
-'useRunOnStart'
-
-import { ZanixMongoProvider } from '@zanix/server'
+import { Interactor, ZanixMongoProvider } from '@zanix/server'
 import ExampleModel from 'models/example.model'
 
 /**
@@ -13,6 +11,7 @@ import ExampleModel from 'models/example.model'
  * -------- You can also implement seeders in this section.
  */
 
+@Interactor({ type: 'general-provider' /* , startMode: 'startOnInit' */ })
 export class MongoProvider extends ZanixMongoProvider {
   constructor(config: Configuration) {
     super({

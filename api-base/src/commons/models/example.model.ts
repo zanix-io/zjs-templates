@@ -10,8 +10,4 @@ const ExampleModel = ZanixMongoProvider.defineModel<ExampleModelAttrs>(
   }
 )
 
-declare global {
-  type ExampleModel = typeof ExampleModel
-}
-
 export default ExampleModel

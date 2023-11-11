@@ -5,7 +5,7 @@ import {
   Post,
   ZanixController
 } from '@zanix/server'
-import { ExampleService } from 'services/example.service'
+import type { ExampleService } from 'services/example.service'
 import { ExampleRTO } from './rtos'
 import { exampleInterceptor } from 'middlewares'
 
@@ -20,11 +20,11 @@ import { exampleInterceptor } from 'middlewares'
  * -------- Controllers for REST logic only.
  */
 
-@Controller('zanix', ExampleService)
+@Controller({ prefix: 'zanix', service: 'example-service' })
 export class ExampleController extends ZanixController<ExampleService> {
   /**
    * @name welcomeIntercepted
-   * @summary GET api/welcome/intercepted route
+   * @summary GET api/zanix/intercepted route
    * @description Shows an option to intercept response using @Interceptor decorator
    * @returns {Promise<HttpResponse>}
    */
@@ -38,7 +38,7 @@ export class ExampleController extends ZanixController<ExampleService> {
 
   /**
    * @name post
-   * @summary POST api/welcome route
+   * @summary POST api/zanix route
    * @description Request object validation {ExampleRTO} and processing
    * @param payload
    * @returns {Promise<HttpResponse>}

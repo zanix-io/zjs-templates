@@ -1,9 +1,4 @@
-// Uncomment 'useCacheProvider' to enable memcached or redis as the cache provider
-// The default cache provider is the node-cache library
-
-// 'useCacheProvider'
-
-import { ZanixMemcachedProvider } from '@zanix/server'
+import { Interactor, ZanixMemcachedProvider } from '@zanix/server'
 
 /**
  * @Provider
@@ -14,6 +9,7 @@ import { ZanixMemcachedProvider } from '@zanix/server'
  * -------- This is for Adapters use only.
  */
 
+@Interactor({ type: 'znx-cache-provider' })
 export class ExampleMemcachedProvider extends ZanixMemcachedProvider {
   constructor(/* config: Configuration */) {
     super('127.0.0.1:11211')

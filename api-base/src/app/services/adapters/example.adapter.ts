@@ -11,7 +11,7 @@ import { Adapter, ZanixAdapter } from '@zanix/server'
  * -------- Providers or Clients interaction (Databases, APIs,...)
  */
 
-@Adapter()
+@Adapter('example-adapter')
 export class ExampleAdapter extends ZanixAdapter {
   /**
    *

@@ -1,4 +1,4 @@
-import { ZanixProvider } from '@zanix/server'
+import { Interactor, ZanixProvider } from '@zanix/server'
 
 /**
  * @Provider
@@ -9,6 +9,7 @@ import { ZanixProvider } from '@zanix/server'
  * -------- This is for Adapters use only.
  */
 
+@Interactor({ type: 'general-provider' })
 export class ExampleBaseProvider extends ZanixProvider {
   constructor() {
     super('https://url.com')

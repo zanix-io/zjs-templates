@@ -1,4 +1,5 @@
 import { Adapter, ZanixDatabaseAdapter } from '@zanix/server'
+import ExampleModel from 'models/example.model'
 import { MongoProvider } from 'providers/mongo.provider'
 
 /**
@@ -12,11 +13,12 @@ import { MongoProvider } from 'providers/mongo.provider'
  * -------- Providers interaction (Databases, Queues,...)
  */
 
-@Adapter(MongoProvider, 'znxTests')
-export class ProviderAdapter extends ZanixDatabaseAdapter<
-  ExampleModel,
-  typeof MongoProvider
-> {
+@Adapter({
+  name: 'database-adapter',
+  interactor: MongoProvider,
+  model: ExampleModel
+})
+export class DatabaseAdapter extends ZanixDatabaseAdapter<typeof ExampleModel> {
   /**
    *
    * @param data {string}

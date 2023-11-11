@@ -1,5 +1,5 @@
 import { Mutation, Query, Resolver, ZanixResolver } from '@zanix/server'
-import { ExampleService } from 'services/example.service'
+import type { ExampleService } from 'services/example.service'
 
 /**
  * @Resolver
@@ -11,13 +11,24 @@ import { ExampleService } from 'services/example.service'
  * -------- Resolvers for GQL request logic only.
  */
 
-@Resolver(ExampleService)
+@Resolver({ prefix: 'zanix', service: 'example-service' })
 export class WelcomeResolver extends ZanixResolver<ExampleService> {
+  /**
+   * @name welcome
+   * @summary Query `zanix_welcome { message }`
+   */
   @Query({ output: 'Welcome!' })
   public welcome() {
     return { message: 'Welcome ZanixJS Server' }
   }
 
+  /**
+   * @name resolve
+   * @summary Mutation `zanix_resolve(input: $input}){
+        message
+        data
+    }}`
+   */
   @Mutation({ input: 'Data!', output: 'Welcome' })
   public resolve(payload: Welcome) {
     const data = this.service.welcome(payload)

@@ -12,7 +12,7 @@ import { ExampleClient } from 'clients/example.client'
  * -------- Clients interaction
  */
 
-@Adapter(ExampleClient)
+@Adapter({ name: 'client-adapter', interactor: ExampleClient })
 export class ClientAdapter extends ZanixAdapter<typeof ExampleClient> {
   /**
    *

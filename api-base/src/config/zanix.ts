@@ -1,7 +1,8 @@
 /**
  * @type {AppSetup}
- *  Do not remove "as a const" or assign a type to this module, or change generalConfig position.
- *  It is for a correct typing of configuration variables
+ * Please refrain from removing "as a const" or assigning a type to this module,
+ * and please do not alter the position of the generalConfig.
+ * These actions are essential to ensure the accurate typing of configuration variables.
  */
 
 const generalConfig: AppSetup = {
@@ -25,5 +26,10 @@ export default {
     },
     // Example secret link, for Zanix Secrets
     secrets: ['EXAMPLE_SECRET']
+  },
+  dependencies: {
+    services: ['example-service'],
+    adapters: ['example-adapter', 'client-adapter', 'database-adapter'],
+    jobs: ['example-job']
   }
 } as const
