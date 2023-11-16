@@ -19,7 +19,7 @@ export class ExampleService extends ZanixService {
    * @returns {string}
    */
   public async welcome({ data }: Welcome) {
-    this.tasker.run('example-job', { data: 'ok' })
+    this.tasker.run('example-job', { data: 'ok', contextId: this.contextId })
 
     return this.adapters.get<ExampleAdapter>('example-adapter').welcome(data)
   }
