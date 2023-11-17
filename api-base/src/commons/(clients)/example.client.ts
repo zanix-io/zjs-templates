@@ -1,4 +1,4 @@
-import { ZanixRestClient } from '@zanix/server'
+import { Interactor, ZanixRestClient } from '@zanix/server'
 
 /**
  * @Client
@@ -9,6 +9,7 @@ import { ZanixRestClient } from '@zanix/server'
  * -------- This is for Adapters use only.
  */
 
+@Interactor({ type: 'general-client' })
 export class ExampleClient extends ZanixRestClient {
   constructor(config: Configuration) {
     super({ uri: config.exampleDevUri })

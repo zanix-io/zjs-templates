@@ -1,4 +1,4 @@
-import { ZanixClient } from '@zanix/server'
+import { Interactor, ZanixClient } from '@zanix/server'
 
 /**
  * @Client
@@ -9,6 +9,7 @@ import { ZanixClient } from '@zanix/server'
  * -------- This is for Adapters use only.
  */
 
+@Interactor({ type: 'general-client' })
 export class ExampleBaseClient extends ZanixClient {
   constructor() {
     super('https://client.com')
