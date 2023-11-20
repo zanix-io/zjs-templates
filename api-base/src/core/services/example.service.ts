@@ -1,5 +1,5 @@
 import { Service, ZanixService } from '@zanix/server'
-import type { ExampleAdapter } from './adapters/example.adapter'
+import type { ExampleAdapter } from 'adapters/example.adapter'
 
 /**
  * @Service

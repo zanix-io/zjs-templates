@@ -6,7 +6,7 @@ import {
   ZanixController
 } from '@zanix/server'
 import type { ExampleService } from 'services/example.service'
-import { ExampleRTO } from './rtos'
+import { ExampleRTO } from 'rtos'
 import { exampleInterceptor } from 'middlewares'
 
 /**

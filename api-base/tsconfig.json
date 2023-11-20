@@ -3,13 +3,17 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "services/*": ["src/app/services/*"],
-      "adapters/*": ["src/app/services/adapters/*"],
-      "providers/*": ["src/commons/(providers)/*"],
-      "clients/*": ["src/commons/(clients)/*"],
-      "models/*": ["src/commons/models/*"],
+      "services/*": ["src/core/services/*"],
+      "adapters/*": ["src/core/adapters/*"],
+      "models/*": ["src/core/adapters/data/models/*"],
+      "providers/*": ["src/core/adapters/interactors/providers/*"],
+      "clients/*": ["src/core/adapters/interactors/clients/*"],
+      "app/utils/*": ["src/commons/utils/*"],
+      "app/utils": ["src/commons/utils/index"],
+      "middlewares/*": ["src/commons/middlewares/*"],
       "middlewares": ["src/commons/middlewares/index"],
-      "utilities": ["src/commons/utils/index"]
+      "rtos/*": ["src/commons/rtos/*"],
+      "rtos": ["src/commons/rtos/index"]
     }
   }
 }

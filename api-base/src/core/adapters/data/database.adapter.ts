@@ -1,5 +1,5 @@
 import { Adapter, ZanixDatabaseAdapter } from '@zanix/server'
-import ExampleModel from 'models/example.model'
+import ExampleModel from './models/example.model'
 import { MongoProvider } from 'providers/mongo.provider'
 
 /**
