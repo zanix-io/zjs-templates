@@ -44,7 +44,7 @@ export class ExampleController extends ZanixController<ExampleService> {
    * @returns {Promise<HttpResponse>}
    */
   @Post(ExampleRTO)
-  public async post(payload: Welcome): Promise<HttpResponse> {
+  public async post(payload: ExampleData): Promise<HttpResponse> {
     const data = await this.service.welcome(payload)
 
     return {

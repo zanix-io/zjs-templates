@@ -30,7 +30,7 @@ export class WelcomeResolver extends ZanixResolver<ExampleService> {
     }}`
    */
   @Mutation({ input: 'Data!', output: 'Welcome' })
-  public resolve(payload: Welcome) {
+  public resolve(payload: ExampleData) {
     const data = this.service.welcome(payload)
 
     return { message: 'Request processed', data }

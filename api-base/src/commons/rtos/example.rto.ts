@@ -14,3 +14,7 @@ export class ExampleRTO extends ZanixRTO {
   @Expose()
   public data!: string
 }
+
+declare global {
+  type ExampleData = ExampleRTO
+}

@@ -4,6 +4,3 @@ interface ExampleModelAttrs {
 }
 
 /** Other definitions */
-interface Welcome {
-  data: string
-}
