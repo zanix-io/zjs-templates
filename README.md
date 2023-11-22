@@ -59,9 +59,14 @@ root folder
 - 📄 README.md
 - 📄 .eslintrc
 - 📄 .prettierrc
+- 📁 config
+  - 📁 secrets
+    - 📄 \*.srt
+  - 📄 \*.sqlite (local config data)
+  - 📄 zanix.ts (app file. For variable, secret, and configuration definition)
 - 📁 resources (assets, data, statics, scripts, non-modular public files)
 - 📁 src
-  - 📁 tests
+  - 📁 (tests)
   - 📁 app
     - 📁 amqp
       - 📄 \*.subscriber.ts (injects one service)
@@ -75,20 +80,6 @@ root folder
       - 📄 \*.resolver.ts (injects one service)
     - 📁 rest
       - 📄 \*.controller.ts (injects one service)
-    - 📁 commons
-      - 📁 middlewares
-        - 📄 \*.pipes.ts
-        - 📄 \*.interceptor.ts
-        - 📄 \*.ts
-      - 📁 rtos
-        - 📄 \*.rto.ts (request transfer object)
-      - 📁 utils
-      - ...
-  - 📁 config
-    - 📁 secrets
-      - 📄 \*.srt
-    - 📄 \*.sqlite (local config data)
-    - 📄 zanix.ts (app file. For variable, secret, and configuration definition)
   - 📁 core
     - 📁 adapters
       - 📁 data
@@ -104,9 +95,18 @@ root folder
     - 📁 jobs
     - 📁 services
       - 📄 \*.service.ts (services)
+  - 📁 shared
+    - 📁 middlewares
+      - 📄 \*.pipes.ts
+      - 📄 \*.interceptor.ts
+      - 📄 \*.ts
+    - 📁 rtos
+      - 📄 \*.rto.ts (request transfer object)
+    - 📁 utils
+    - ...
   - 📁 typings
 
-This structure is designed to promote modularity, scalability, and maintainability in your ZANIX Framework projects. Feel free to explore each directory to understand the purpose of different files and folders. Only the `resources` and `src/config` folders must not change their name or location for the CLI commands to work correctly.
+This structure is designed to promote modularity, scalability, and maintainability in your ZANIX Framework projects. Feel free to explore each directory to understand the purpose of different files and folders. Only the `resources` and `config` folders must not change their name or location for the CLI commands to work correctly.
 
 ## Support and Contributions
 
